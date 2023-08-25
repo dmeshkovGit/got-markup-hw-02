@@ -193,11 +193,11 @@ img {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .advantages-list-item {
   width: calc((100% - 72px) / 4);
-  margin-bottom: 8px;
 }
 
 .section-list-item-text {
