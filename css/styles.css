@@ -50,11 +50,11 @@ img {
 
 .page-header .container {
   display: flex;
-  width: 100%;
-  max-width: 1128px;
+  width: 1128px;
   justify-content: space-between;
   margin-top: 24px;
   margin-bottom: 12px;
+  margin: 0 auto;
 }
 
 .page-nav {
@@ -89,6 +89,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -132,11 +133,13 @@ img {
   display: flex;
   align-items: center;
   height: 600px;
+  padding: 188px 0;
   margin-top: 12px;
   margin-bottom: 120px;
 }
 
 .page-title {
+  max-width: 496px;
   color: var(--white, #fff);
   text-align: center;
   font-size: 56px;
@@ -144,7 +147,6 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
