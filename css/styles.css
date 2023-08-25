@@ -26,8 +26,7 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -45,6 +44,10 @@ img {
 
 /* Page nav */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header .container {
   display: flex;
   width: 100%;
@@ -56,17 +59,12 @@ img {
 
 .page-nav {
   display: flex;
+  align-items: center;
 }
 
 .page-nav-list {
   display: flex;
-  margin-left: 76px;
-  column-gap: 40px;
-}
-
-.address-list {
-  display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .logo {
@@ -78,13 +76,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-studio-nav {
   color: #2e2f42;
 }
 
-.page-nav-list {
-}
 .nav-link {
   color: #2e2f42;
   font-size: 16px;
@@ -103,6 +100,9 @@ img {
 }
 
 .address-list {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
 }
 .address-list-item .address-link {
   color: var(--slate, #434455);
