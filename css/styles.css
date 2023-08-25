@@ -341,11 +341,7 @@ img {
 
 footer {
   background: var(--navyblue, #2e2f42);
-}
-
-footer .container {
-  padding-top: 101px;
-  padding-bottom: 101px;
+  padding: 100px 0;
 }
 
 .footer-text {
@@ -359,7 +355,7 @@ footer .container {
   margin-top: 18px;
 }
 
-.logo {
+footer .logo {
   color: var(--iris, #4d5ae5);
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -368,6 +364,8 @@ footer .container {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-studio-footer {
