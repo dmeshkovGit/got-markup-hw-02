@@ -4,8 +4,70 @@ a {
 ul {
   list-style: none;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* Page nav */
+
+.page-header .container {
+  display: flex;
+  width: 100%;
+  max-width: 1128px;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.page-nav {
+  display: flex;
+}
+
+.page-nav-list {
+  display: flex;
+  margin-left: 76px;
+  column-gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  column-gap: 40px;
+}
 
 .logo {
   color: #4d5ae5;
@@ -58,10 +120,20 @@ ul {
 }
 
 /* Order Service */
+.page-title-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .page-title-section {
   background: var(--navyblue, #2e2f42);
   line-height: 1.07;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  margin-top: 12px;
+  margin-bottom: 120px;
 }
 
 .page-title {
@@ -72,6 +144,10 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .order-service-button {
@@ -83,6 +159,12 @@ ul {
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
+  border-top: 16px solid #4d5ae5;
+  border-bottom: 16px solid #4d5ae5;
+  border-right: 32px solid #4d5ae5;
+  border-left: 32px solid #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-service-button:hover,
@@ -93,9 +175,13 @@ ul {
 /* Company advantages */
 
 .advantages-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .advantages-list {
+  display: flex;
+  column-gap: 24px;
 }
 
 .section-list-item-title {
@@ -108,6 +194,7 @@ ul {
 }
 
 .advantages-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .section-list-item-text {
@@ -122,6 +209,13 @@ ul {
 
 .our-team-section {
   background: var(--cloud, #f4f4fd);
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.our-team-section .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -136,24 +230,46 @@ ul {
 }
 
 .our-team-list {
+  margin-top: 72px;
+  display: flex;
+  column-gap: 24px;
 }
 
 .our-team-list-item {
   background: var(--white, #fff);
   text-align: center;
+  width: calc((100% - 72px) / 4);
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.section-list-item-title {
+.our-team-list-item .section-list-item-title {
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.our-team-list-item .section-list-item-text {
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 /* Our Portfolio */
 .our-portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.our-portfolio-section .section-title {
+  margin-bottom: 72px;
 }
 
 .section-title {
@@ -168,27 +284,41 @@ ul {
 }
 
 .our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .our-portfolio-list-item {
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
+  width: calc((100% - 48px) / 3);
+  overflow: hidden;
 }
 
-.section-list-item-title {
+.our-portfolio-list-item .section-list-item-title {
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
-.section-list-item-text {
+.our-portfolio-list-item .section-list-item-text {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 /* Footer */
@@ -196,6 +326,12 @@ ul {
 footer {
   background: var(--navyblue, #2e2f42);
 }
+
+footer .container {
+  padding-top: 101px;
+  padding-bottom: 101px;
+}
+
 .footer-text {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
@@ -203,6 +339,8 @@ footer {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  width: 264px;
+  margin-top: 18px;
 }
 
 .logo {
