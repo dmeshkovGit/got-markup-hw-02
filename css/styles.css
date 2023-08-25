@@ -355,7 +355,7 @@ footer {
   margin-top: 18px;
 }
 
-footer .logo {
+.logo-footer {
   color: var(--iris, #4d5ae5);
   font-family: Raleway, sans-serif;
   font-size: 18px;
