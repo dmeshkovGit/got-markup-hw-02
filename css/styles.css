@@ -133,8 +133,6 @@ img {
   display: flex;
   align-items: center;
   height: 600px;
-  margin-top: 12px;
-  margin-bottom: 120px;
   padding: 188px 0;
 }
 
@@ -176,8 +174,6 @@ img {
 /* Company advantages */
 
 .advantages-section {
-  margin-top: 120px;
-  margin-bottom: 120px;
   padding: 120px 0;
 }
 
@@ -212,8 +208,6 @@ img {
 
 .our-team-section {
   background: var(--cloud, #f4f4fd);
-  margin-top: 120px;
-  margin-bottom: 120px;
   padding: 120px 0;
 }
 
